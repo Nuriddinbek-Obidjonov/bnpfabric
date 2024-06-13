@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import AutumnColl from "./contents/AutumnColl"
+import Footer from "./contents/Footer"
+import Languages from "./contents/Languages"
+import Navbar from "./contents/Navbar"
+import News from "./contents/News"
+import Services from "./contents/Services"
+import SummerColl from "./contents/SummerColl"
+import WinterColl from "./contents/WinterColl"
+import Sofa1 from "./contents/Sofa1"
+import Sofa2 from "./contents/Sofa2"
+import Sofa3 from "./contents/Sofa3"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Languages/>
+      <Navbar/>
+      <Services/>
+      <Sofa1/>
+      <WinterColl/>
+      <Sofa2/>
+      <SummerColl/>
+      <Sofa3/>
+      <AutumnColl/>
+      <News/>
+      <Footer/>
+    </div>
   )
 }
 
